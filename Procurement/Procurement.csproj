@@ -103,6 +103,9 @@
     <Compile Include="Controls\EssenceStashTab.xaml.cs">
       <DependentUpon>EssenceStashTab.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\DivinationStashTab.xaml.cs">
+      <DependentUpon>DivinationStashTab.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Controls\CurrencyStashTab.xaml.cs">
       <DependentUpon>CurrencyStashTab.xaml</DependentUpon>
     </Compile>
@@ -467,6 +470,10 @@
     <Resource Include="Resources\fontin-smallcaps-webfont.ttf" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Controls\DivinationStashTab.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Controls\EssenceStashTab.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

@@ -12,6 +12,7 @@ namespace POEApi.Model
         Gem,
         Jewel,
         Currency,
+        DivinationCard
     }
 
     public enum Rarity : int

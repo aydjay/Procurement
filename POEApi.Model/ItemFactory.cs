@@ -35,6 +35,9 @@ namespace POEApi.Model
                 if (item.FrameType == 5)
                     return GetCurrency(item);
 
+                if (item.FrameType == 6)
+                    return new DivinationCard(item);
+
                 if (item.TypeLine.Contains("Map") && item.DescrText != null && item.DescrText.Contains("Travel to this Map"))
                     return new Map(item);
 

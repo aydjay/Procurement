@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
+
 namespace POEApi.Model
 {
     public enum TabType
@@ -27,7 +29,8 @@ namespace POEApi.Model
         public string srcL { get; set; }
         public string srcC { get; set; }
         public string srcR { get; set; }
-        public bool Hidden { get; set; }        
+        public bool Hidden { get; set; }
+        public List<string> Cards { get; set; }
         
         public Tab()
         { }
@@ -41,6 +44,7 @@ namespace POEApi.Model
             srcC = getUrl(t.srcC);
             srcL = getUrl(t.srcL); 
             Hidden = t.hidden;
+            //Todo: Populate cards
             Type = ProxyMapper.GetTabType(t.type);
         }
 
