@@ -22,6 +22,9 @@ namespace Procurement.ViewModel
                 case TabType.Fragment:
                     stashTab = new FragmentStashTab(tab.i, filters);
                     break;
+                case TabType.DivinationCard:
+                    stashTab = new DivinationStashTab(tab.i, filters);
+                    break;
                 default:
                     stashTab = new StashTabControl(tab.i, filters);
                     break;

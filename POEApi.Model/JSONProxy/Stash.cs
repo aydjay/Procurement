@@ -111,5 +111,11 @@ namespace POEApi.Model.JSONProxy
         public bool hidden { get; set; }
         public string type { get; set; }
         public bool selected { get; set; }
+        public List<Card> cards { get; set; }
+    }
+
+    public class Card
+    {
+        public string name { get; set; }
     }
 }
